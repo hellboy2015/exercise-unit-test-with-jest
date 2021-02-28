@@ -5,16 +5,16 @@ let oneEuroIs = {
 }
 
 function fromEuroToDollar(euroAmount) {
-    return euroAmount*oneEuroIs["USD"];
+    return euroAmount*oneEuroIs.USD;
 }
 
 function fromDollarToYen(dollarAmount) {
-    return dollarAmount/oneEuroIs["USD"]*oneEuroIs["JPY"];
+    return dollarAmount/oneEuroIs.USD*oneEuroIs.JPY;
     
 }
 
 function fromYenToPound(yenAmount) {
-    return yenAmount/oneEuroIs["JPY"]*oneEuroIs["GBP"];
+    return yenAmount/oneEuroIs.JPY*oneEuroIs.GBP;
 }
 
 module.exports = { fromDollarToYen, fromEuroToDollar, fromYenToPound };
